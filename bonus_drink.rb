@@ -4,7 +4,7 @@ class BonusDrink
       0
     elsif amount.odd?                # 奇数の時、飲める本数は最初の本数の1.5倍（小数点以下切り捨て）
       3 * amount / 2
-    elsif amoount.even?              # 偶数は、ひとつ前の奇数の飲める本数＋1本（0以外）
+    elsif amount.even?              # 偶数は、ひとつ前の奇数の飲める本数＋1本（0以外）
       3 * (amount - 1 ) / 2 + 1
     end
   end
